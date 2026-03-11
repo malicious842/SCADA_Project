@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ミニSCADAプロジェクト", "ミニSCADAプロジェクト\ミニSCADAプロジェクト.csproj", "{47B6EB9E-4653-4B5D-B9B1-F361D1800DB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B6EB9E-4653-4B5D-B9B1-F361D1800DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B6EB9E-4653-4B5D-B9B1-F361D1800DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B6EB9E-4653-4B5D-B9B1-F361D1800DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B6EB9E-4653-4B5D-B9B1-F361D1800DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63B71BA0-995C-4C1B-89FF-E63170E97BA2}
+	EndGlobalSection
+EndGlobal
