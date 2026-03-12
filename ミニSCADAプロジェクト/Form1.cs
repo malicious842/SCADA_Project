@@ -22,7 +22,7 @@ namespace ミニSCADAプロジェクト
         {
             // チャートの設定
             chart1.Series.Clear();
-            Series tempSeries = new Series("Temp");
+            Series tempSeries = new Series("Degrees");
             tempSeries.ChartType = SeriesChartType.Line;
             chart1.Series.Add(tempSeries);
             Series pressureSeries = new Series("Pressure");
@@ -47,6 +47,17 @@ namespace ミニSCADAプロジェクト
             bool running = rand.Next(0, 2) == 1;
             string stateText = running ? "稼働" : "停止";
 
+            //安全策（存在チェック）
+            if (chart1.Series.IndexOf("Degrees") != -1)
+            {
+                chart1.Series["Degrees"].Points.AddXY(time, temperature);
+            }
+            if (chart1.Series.IndexOf("Pressure") != -1)
+            {
+                chart1.Series["Pressure"].Points.AddXY(time, pressure);
+            }
+
+
             // ラベル更新
             Degrees.Text = "温度：" + temperature + "℃";
             Pressure.Text = "圧力：" + pressure + "MPa";
@@ -54,10 +65,12 @@ namespace ミニSCADAプロジェクト
             State.ForeColor = running ? Color.Green : Color.Gray;
 
             // グラフ更新
-            chart1.Series["Temp"].Points.AddXY(time, temperature);
+            chart1.Series["Degrees"].Points.AddXY(time, temperature);
             chart1.Series["Pressure"].Points.AddXY(time, pressure);
-            if (chart1.Series["Temp"].Points.Count > 30) chart1.Series["Temp"].Points.RemoveAt(0);
+
+            if (chart1.Series["Degrees"].Points.Count > 30) chart1.Series["Degrees"].Points.RemoveAt(0);
             if (chart1.Series["Pressure"].Points.Count > 30) chart1.Series["Pressure"].Points.RemoveAt(0);
+
             time++;
 
             // CSVに追記

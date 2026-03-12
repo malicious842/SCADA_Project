@@ -12,8 +12,4 @@
     <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="新しいフォルダー\" />
-  </ItemGroup>
-
 </Project>

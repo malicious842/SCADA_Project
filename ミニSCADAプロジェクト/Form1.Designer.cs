@@ -98,12 +98,13 @@ namespace ミニSCADAプロジェクト
             // Pressure
             // 
             Pressure.AutoSize = true;
+            Pressure.BackColor = Color.White;
             Pressure.Dock = DockStyle.Fill;
-            Pressure.ForeColor = Color.White;
-            Pressure.Location = new Point(0, 135);
-            Pressure.Margin = new Padding(0);
+            Pressure.ForeColor = Color.Black;
+            Pressure.Location = new Point(10, 145);
+            Pressure.Margin = new Padding(10);
             Pressure.Name = "Pressure";
-            Pressure.Size = new Size(200, 45);
+            Pressure.Size = new Size(180, 25);
             Pressure.TabIndex = 3;
             Pressure.Text = "圧力：";
             Pressure.TextAlign = ContentAlignment.MiddleCenter;
@@ -111,12 +112,13 @@ namespace ミニSCADAプロジェクト
             // Degrees
             // 
             Degrees.AutoSize = true;
+            Degrees.BackColor = Color.White;
             Degrees.Dock = DockStyle.Fill;
-            Degrees.ForeColor = Color.White;
-            Degrees.Location = new Point(0, 90);
-            Degrees.Margin = new Padding(0);
+            Degrees.ForeColor = Color.Black;
+            Degrees.Location = new Point(10, 100);
+            Degrees.Margin = new Padding(10);
             Degrees.Name = "Degrees";
-            Degrees.Size = new Size(200, 45);
+            Degrees.Size = new Size(180, 25);
             Degrees.TabIndex = 2;
             Degrees.Text = "温度：";
             Degrees.TextAlign = ContentAlignment.MiddleCenter;
@@ -124,13 +126,15 @@ namespace ミニSCADAプロジェクト
             // State
             // 
             State.AutoSize = true;
+            State.BackColor = Color.White;
             State.Dock = DockStyle.Fill;
-            State.ForeColor = Color.White;
+            State.Font = new Font("Yu Gothic UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
+            State.ForeColor = Color.Black;
             State.ImageAlign = ContentAlignment.MiddleLeft;
-            State.Location = new Point(0, 45);
-            State.Margin = new Padding(0);
+            State.Location = new Point(10, 55);
+            State.Margin = new Padding(10);
             State.Name = "State";
-            State.Size = new Size(200, 45);
+            State.Size = new Size(180, 25);
             State.TabIndex = 1;
             State.Text = "状態：";
             State.TextAlign = ContentAlignment.MiddleCenter;
